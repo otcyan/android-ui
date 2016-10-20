@@ -108,7 +108,6 @@ public class CalendarActivity extends RxAppCompatActivity {
 
     }
 
-
     public static Calendar getCalendarByYearMonthDay(String yearMonthDay) {
         Calendar calendar = Calendar.getInstance();
         try {
