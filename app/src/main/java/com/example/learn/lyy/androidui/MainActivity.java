@@ -23,6 +23,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         //设置ListView
         lv_main = (ListView) findViewById(R.id.lv_main);
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1);
+        arrayAdapter.add("UI lesson 01");
+        arrayAdapter.add("UI lesson 02");
+        arrayAdapter.add("－－－－－－－－－－－－－－－－");
         arrayAdapter.add("calendarlibrary");
         lv_main.setAdapter(arrayAdapter);
         lv_main.setOnItemClickListener(this);
@@ -33,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         switch (position) {
-            case 0:
+            case 3:
                 Intent intent = new Intent(MainActivity.this, CalendarActivity.class);
                 startActivity(intent);
 
