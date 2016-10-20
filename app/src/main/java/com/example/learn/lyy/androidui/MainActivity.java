@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1);
         arrayAdapter.add("UI lesson 01");
         arrayAdapter.add("UI lesson 02");
-        arrayAdapter.add("－－－－－－－－－－－－－－－－");
+        arrayAdapter.add("－－－－－－－－－－－－－－－－学习的控件");
         arrayAdapter.add("calendarlibrary");
         lv_main.setAdapter(arrayAdapter);
         lv_main.setOnItemClickListener(this);
